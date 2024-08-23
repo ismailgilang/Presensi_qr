@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('presensis', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('nip')->unique();
+            $table->string('nip');
             $table->string('role');
             $table->string('qr');
             $table->string('keterangan');
